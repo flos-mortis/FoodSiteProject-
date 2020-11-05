@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Pages\Registration.cshtml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.78" />
+    <PackageReference Include="Npgsql" Version="5.0.1" />
+  </ItemGroup>
+
+</Project>

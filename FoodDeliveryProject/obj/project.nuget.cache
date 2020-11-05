@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "PUvoGLEzwsYmIs+oRD/JjLmL8VC/LQgxUsTzUzEAa1r3xXkBqM9uZK67rrrxcaMxw651SS72X5dO9YdWKiYJRA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\1\\Documents\\проекты visual\\FoodDeliveryProject\\FoodDeliveryProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\1\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
+    "C:\\Users\\1\\.nuget\\packages\\npgsql\\5.0.1\\npgsql.5.0.1.nupkg.sha512",
+    "C:\\Users\\1\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512",
+    "C:\\Users\\1\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}
