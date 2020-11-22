@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Окамаки</title>
+    <!--    <link type="image/x-icon" rel="icon" href="favicon.ico"/>-->
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="css/main_page.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+<body>
+<header class="header">
+    <div class="header__row">
+        <div class="header__logo">
+            <a href="main_page.html"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div class="line-block"></div>
+        <div class="header__social">
+            <a href=""><div class="social__inst">
+                <img src="img/instagram.png" alt="">
+            </div></a>
+            <a href=""><div class="social__vk">
+                <img src="img/vk.png" alt="">
+            </div></a>
+        </div>
+        <div class="header__contact">
+            <p class="tell">8 (843) 222-33-33</p>
+            <p class="schedule">Пн-Вс <span>10:00-00:30</span></p>
+        </div>
+        <div class="personal-account__row">
+            <div class="personal-account__count">
+                <p class="personal-account__p">Мои баллы: <span>0</span></p>
+                <a href="points.html" class=""><p class="personal-account__how">Как начисляются баллы?</p></a>
+            </div>
+            <a href="personal-account.html" class=""><img src="img/enter.png" alt="" class=""></a>
+        </div>
+    </div>
+    <div class="header__menu">
+        <div class="menu__body">
+            <ul class="menu__list">
+                <li class="menu_link"><a href="rolls.html" class="">Роллы</a></li>
+                <li class="menu_link"><a href="sushi.html" class="">Суши</a></li>
+                <li class="menu_link"><a href="pizza.html" class="">Пицца</a></li>
+                <li class="menu_link"><a href="drinks.html" class="">Напитки</a></li>
+                <li class="menu_link1"><a href="basket.html" class="">Корзина: </a> <span>0</span></li>
+                <li class="menu_link"><a href="reviews.html" class="">Отзывы</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="content">
+    <div class="container-basket">
+        <div class="basket">Корзина</div>
+        <div class="basket-goods__row">
+            <img src="img/pizza.png" alt="">
+            <div class="basket__description">
+                <p class="basket-goods__title">Пицца мясная,  24 см</p>
+                <p class="basket-goods__text">Салями, ветчина, бекон, томаты, лук красный маринованный,
+                    итальянский соус, сыр моцарелла. 24 см.</p>
+            </div>
+            <div class="basket__switch">
+                <p class="plus">+</p>
+                <div class="basket__line"></div>
+                <p class="basket__number">1</p>
+                <div class="basket__line"></div>
+                <p class="minus">-</p>
+            </div>
+            <div class="price">
+                <p class="price__text">359 руб</p>
+            </div>
+        </div>
+        <div class="basket-goods__row">
+            <img src="img/pizza.png" alt="">
+            <div class="basket__description">
+                <p class="basket-goods__title">Пицца мясная,  24 см</p>
+                <p class="basket-goods__text">Салями, ветчина, бекон, томаты, лук красный маринованный,
+                    итальянский соус, сыр моцарелла. 24 см.</p>
+            </div>
+            <div class="basket__switch">
+                <p class="plus">+</p>
+                <div class="basket__line"></div>
+                <p class="basket__number">1</p>
+                <div class="basket__line"></div>
+                <p class="minus">-</p>
+            </div>
+            <div class="price">
+                <p class="price__text">359 руб</p>
+            </div>
+        </div>
+        <div class="personal-information">
+            Персональная информация
+        </div>
+        <div class="form-basket">
+            <form action="" method="post">
+                <div class="personal-information__row">
+                    <div class="personal-information__box">
+                        <label>Имя <span>*</span></label><br>
+                        <input type="text" name="Phone" required><br>
+                    </div>
+                    <div class="personal-information__box">
+                        <label>Телефон <span>*</span></label><br>
+                        <input type="tel" name="Phone" required><br>
+                    </div>
+                    <div class="personal-information__box-num">
+                        <label>Кол-во персон</label><br>
+                        <input type="number" name="Phone" required><br>
+                    </div>
+                    <div class="personal-information__box">
+                        <label>Email</label><br>
+                        <input type="text" name="Phone" required><br>
+                    </div>
+                </div>
+                <div class="personal-information">
+                    Способ получения заказа
+                </div>
+                <div class="receipt-of-order" id="filter1">
+                    <div class="click" onmousedown="viewDiv()">Доставка курьером</div>
+                    <div class="receipt-of-order-in">
+                        Самовывоз
+                    </div>
+                </div>
+                <div class="receipt-of-order-rev" id="filter2">
+                    <div class="receipt-of-order-in-rev">
+                        Доставка курьером
+                    </div>
+                    <div class="click-rev" onmousedown="viewDiv()">Самовывоз</div>
+                </div>
+                <div class="block__row">
+                    <div class="block" id="block1">
+                        <label class="select-label">Ресторан, откуда будете забирать</label>
+                        <div class="select">
+                            <input class="select__input" type="hidden" name="">
+                            <div class="select__head">г.Казань, ул. Фучика, д 88</div>
+                            <ul class="select__list" style="display: none;">
+                                <li class="select__item">г.Казань, ул. Фучика, д 88</li>
+                                <li class="select__item">г.Казань, улица Копылова, д 14</li>
+                                <li class="select__item">г.Казань, улица Глушко, д 17</li>
+                            </ul>
+                        </div>
+                        <div class="personal-information">
+                            Дополнительная информация
+                        </div>
+                        <label>Комментарий</label><br>
+                        <input class="comment" type="text" name="Phone" required><br>
+                        <div class="time" id="filter3">
+                            <div class="click-time" onmousedown="viewDivTime()">Как можно скорее</div>
+                            <div class="time-in">
+                                Ко времени
+                            </div>
+                        </div>
+                        <div class="time-rev" id="filter4">
+                            <div class="time-in-rev">
+                                Как можно скорее
+                            </div>
+                            <div class="click-time-rev" onmousedown="viewDivTime()">Ко времени</div>
+                        </div>
+                        <div class="time__row">
+                            <div class="time__block">
+                                <label class="select-label">День</label>
+                                <div class="select">
+                                    <input class="select__input" type="hidden" name="">
+                                    <div class="select__head">Сегодня</div>
+                                    <ul class="select__list" style="display: none;">
+                                        <li class="select__item">Сегодня</li>
+                                        <li class="select__item">Понедельник</li>
+                                        <li class="select__item">Вторник</li>
+                                        <li class="select__item">Среда</li>
+                                        <li class="select__item">Четверг</li>
+                                        <li class="select__item">Пятница</li>
+                                        <li class="select__item">Суббота</li>
+                                        <li class="select__item">Воскресение</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="time__block">
+                                <label class="select-label-time">Время</label>
+                                <div class="personal-information__box-num">
+                                    <input type="number" name="Phone" required placeholder="Часов"><br>
+                                </div>
+                            </div>
+                            <div class="dot">:</div>
+                            <div class="time__block">
+                                <div class="personal-information__box-num">
+                                    <input type="number" name="Phone" required placeholder="Минут"><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block" id="block2">
+                        <div class="address_row">
+                            <div class="personal-information__box">
+                                <label>Улица <span>*</span></label><br>
+                                <input type="text" name="Phone" required><br>
+                            </div>
+                            <div class="personal-information__box">
+                                <label>Дом <span>*</span></label><br>
+                                <input type="text" name="Phone" required><br>
+                            </div>
+                            <div class="personal-information__box-num">
+                                <label>Корпус</label><br>
+                                <input type="number" name="Phone" required><br>
+                            </div>
+                        </div>
+                        <div class="personal-information">
+                            Дополнительная информация
+                        </div>
+                        <div class="dop-address__row">
+                            <div class="personal-information__box">
+                                <label>Подъезд</label><br>
+                                <input type="text" name="Phone" required><br>
+                            </div>
+                            <div class="personal-information__box">
+                                <label>Этаж</label><br>
+                                <input type="text" name="Phone" required><br>
+                            </div>
+                            <div class="personal-information__box">
+                                <label>Квартира</label><br>
+                                <input type="text" name="Phone" required><br>
+                            </div>
+                        </div>
+                        <div class="dop-address__row2">
+                            <div class="personal-information__box">
+                                <label>Домофон</label><br>
+                                <input type="text" name="Phone" required><br>
+                            </div>
+                        </div>
+                        <label>Комментарий</label><br>
+                        <input class="comment" type="text" name="Phone" required><br>
+                    </div>
+                    <div class="map__block">
+                        <p>Стоимость доставки 200 рублей</p>
+                        <div style="position:relative;overflow:hidden; margin-left: 25px;"><a href="https://yandex.ru/maps/43/kazan/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Казань</a><a href="https://yandex.ru/maps/43/kazan/?ll=49.157976%2C55.802111&utm_medium=mapframe&utm_source=maps&z=11.16" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты — поиск мест и адресов, городской транспорт</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUE42EgLB" width="713" height="537" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                    </div>
+                </div>
+                <div class="total__row">
+                    <div class="total-block__first">
+                        <div class="total__block">
+                            <div class="total__text">Итого к оплате: <span>........................................</span><p class="black">339</p><img src="img/ruble.png" alt=""></div>
+                            <div class="total__text">Баллов к списанию: <span>.........................................</span><p class="red">-0 Б</p></div>
+                            <div class="total__text">Баллов к начислению: <span>..................................</span><p class="green">+17 Б</p></div>
+                        </div>
+                        <div class="total__under">
+                            Доступно к списанию <span>0</span> Б
+                        </div>
+                    </div>
+                    <div class="total-block__last">
+                        <p>Способ оплаты</p>
+                        <div class="block-pay" id="pay1">
+                            <div class="courier__block">
+                                <img src="img/wallet.png" alt="">Наличными курьеру
+                            </div>
+                            <div class="card__block" onmousedown="revPay()">
+                                <img src="img/credit-card.png" alt="">Оплата картой курьеру
+                            </div>
+                        </div>
+                        <div class="block-pay__rev" id="pay2">
+                            <div class="courier__block-rev" onmousedown="revPay()">
+                                <img src="img/wallet.png" alt="">Наличными курьеру
+                            </div>
+                            <div class="card__block-rev">
+                                <img src="img/credit-card.png" alt="">Оплата картой курьеру
+                            </div>
+                        </div>
+                        <button type="submit">ОФОРМИТЬ</button>
+                    </div>
+                </div>
+
+
+                <!--                <div class="checkbox">-->
+<!--                    <input type="checkbox" id="checkbox_1">-->
+<!--                    <label for="checkbox_1">Запомнить меня</label>-->
+<!--                </div>-->
+<!--                <div class="button_reg">-->
+<!--                    <button type="submit">Зарегистрироваться</button>-->
+<!--                </div>-->
+        </form>
+    </div>
+    </div>
+</div>
+        <footer class="footer">
+            <div class="footer__text-block">
+                <p class="footer__text">© 2020 «Окимаки»</p>
+                <p class="footer__text">Реклама и сотрудничество:</p>
+                <p class="footer__text">marketolog@okimakikazan.ru</p>
+                <p class="footer__text">Для коммерческих предложений:</p>
+                <p class="footer__text">commerce@okimakikazan.ru</p>
+            </div>
+        </footer>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

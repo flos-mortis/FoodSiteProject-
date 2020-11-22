@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Fenix';
+    src: url('Fenix.eot');
+    src: local('Fenix'),
+        url('Fenix.eot?#iefix') format('embedded-opentype'),
+        url('Fenix.woff2') format('woff2'),
+        url('Fenix.woff') format('woff'),
+        url('Fenix.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
